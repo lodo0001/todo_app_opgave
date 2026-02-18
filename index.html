@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TO DO LIST</title>
+    <title>TO DO APP</title>
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="todo_app">
+        <h2>TO DO LIST</h2>
+        <div class="row">
+          <input type="text" id="input_box" placeholder="+ add to do task" />
+          <input type="date" id="due_date" />
+          <input type="time" id="due_time" />
+          <button id="add_knap" onclick="addTask()">Add</button>
+        </div>
+        <ul id="list_container"></ul>
+        <button id="clear_knap">
+          <img src="img/garbage.png" alt="garbage" />
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
