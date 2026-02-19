@@ -149,3 +149,8 @@ ul li span {
 ul li span:hover {
   background: #d56761;
 }
+
+p {
+  font-size: smaller;
+  color: #4a4a4a;
+}

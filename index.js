@@ -29,8 +29,10 @@ function addTask() {
     // ? = Hvis vores bruger har valgt en dato, så vis den, hvis ikke, så vis ingenting
     li.innerHTML = `
       <div class="task-text">${taskText}</div>
-      <small>${dateValue ? dateValue : ""} 
-      ${timeValue ? "kl. " + timeValue : ""}</small>
+   <p>
+  ${dateValue ? dateValue : ""}
+  ${timeValue ? `kl. ${timeValue}` : ""} 
+  </p>
     `;
     // Tilføjer til listen
     listContainer.appendChild(li);
