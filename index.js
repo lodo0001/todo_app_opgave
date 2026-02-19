@@ -19,6 +19,10 @@ function addTask() {
     // Ellers, hvis vi skriver noget i input feltet, så gælder følgende
   } else {
     let li = document.createElement("li");
+    // Hver task får et unikt ID med Date.now()
+    const taskId = Date.now();
+    li.dataset.id = taskId;
+
     // Vi gemmer brugerens input i disse variabler:
     const taskText = inputBox.value;
     const dateValue = dueDate.value;
